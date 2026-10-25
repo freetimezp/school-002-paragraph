@@ -1,18 +1,407 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="theme-color" content="#10110f" />
+        <meta
+            name="description"
+            content="Lesson 002: Learn HTML paragraphs, CSS line height, text width, and readable typography with an interactive playground."
+        />
+        <title>002 — Paragraph Typography | CodeLab School</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
+    <body>
+        <header class="topbar">
+            <a class="brand" href="#" aria-label="CodeLab School home">
+                <span class="brand-icon">&lt;/&gt;</span>
+                <span>CODE<span class="brand-muted">LAB</span></span>
+            </a>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Project</title>
-</head>
+            <div class="topbar-right">
+                <span class="course-label">HTML + CSS FUNDAMENTALS</span>
+                <span class="lesson-number">002 / 1000</span>
+            </div>
+        </header>
 
-<body>
-    start
+        <main>
+            <section class="hero page-width">
+                <div class="eyebrow">
+                    <span class="live-dot"></span>
+                    LESSON 002 · TYPOGRAPHY
+                </div>
 
-    <script src="./assets/js/main.js"></script>
-</body>
+                <h1>MAKE TEXT<br /><span>FEEL RIGHT.</span></h1>
 
+                <p class="hero-copy">
+                    Writing is only half the story. Learn how to shape
+                    paragraphs into something people actually enjoy reading.
+                </p>
+
+                <div class="hero-bottom">
+                    <span>HTML: &lt;p&gt;</span>
+                    <span>CSS: LINE HEIGHT / WIDTH / FONT SIZE</span>
+                </div>
+
+                <div class="hero-decoration" aria-hidden="true">
+                    <span>Ag</span>
+                    <span>¶</span>
+                </div>
+            </section>
+
+            <section class="lesson-section page-width" id="learn">
+                <div class="section-heading">
+                    <span class="section-index">01 — THE BASICS</span>
+                    <h2>Meet the paragraph.</h2>
+                    <p>
+                        One element. One thought. A foundation for readable
+                        content.
+                    </p>
+                </div>
+
+                <div class="basics-grid">
+                    <article class="lesson-card">
+                        <span class="card-number">01.1</span>
+                        <h3>The HTML element</h3>
+                        <p>
+                            The <code>&lt;p&gt;</code> element represents a
+                            paragraph. Use it to group related sentences into a
+                            meaningful block.
+                        </p>
+                        <pre class="code-sample"><code>&lt;p&gt;
+  Learning to code takes practice.
+&lt;/p&gt;</code></pre>
+                    </article>
+
+                    <article class="lesson-card">
+                        <span class="card-number">01.2</span>
+                        <h3>Separate your thoughts</h3>
+                        <p>
+                            Use separate paragraph elements for separate ideas.
+                            Browsers normally display them as distinct blocks.
+                        </p>
+                        <pre
+                            class="code-sample"
+                        ><code>&lt;p&gt;First thought.&lt;/p&gt;
+&lt;p&gt;Another thought.&lt;/p&gt;</code></pre>
+                    </article>
+
+                    <article class="lesson-card">
+                        <span class="card-number">01.3</span>
+                        <h3>Spacing is not content</h3>
+                        <p>
+                            Don't add empty paragraphs just to create gaps. Use
+                            CSS margins to control the space between blocks.
+                        </p>
+                        <pre class="code-sample"><code>p {
+  margin-bottom: 1.5rem;
+}</code></pre>
+                    </article>
+                </div>
+            </section>
+
+            <section class="lab-section" id="playground">
+                <div class="page-width">
+                    <div class="section-heading">
+                        <span class="section-index">02 — INTERACTIVE LAB</span>
+                        <h2>Typography, in your hands.</h2>
+                        <p>
+                            Change the settings. Watch the same paragraph
+                            transform.
+                        </p>
+                    </div>
+
+                    <div class="lab">
+                        <aside class="controls-panel">
+                            <div class="panel-heading">
+                                <span class="panel-kicker">CONTROL ROOM</span>
+                                <span class="panel-symbol">✳</span>
+                            </div>
+
+                            <div class="control-group">
+                                <div class="control-label">
+                                    <label for="fontSize">Font size</label>
+                                    <output id="fontSizeValue">18px</output>
+                                </div>
+                                <input
+                                    id="fontSize"
+                                    type="range"
+                                    min="12"
+                                    max="30"
+                                    value="18"
+                                    step="1"
+                                />
+                                <div class="range-labels">
+                                    <span>12px</span><span>30px</span>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <div class="control-label">
+                                    <label for="lineHeight">Line height</label>
+                                    <output id="lineHeightValue">1.6</output>
+                                </div>
+                                <input
+                                    id="lineHeight"
+                                    type="range"
+                                    min="1"
+                                    max="2.4"
+                                    value="1.6"
+                                    step="0.1"
+                                />
+                                <div class="range-labels">
+                                    <span>Tight</span><span>Relaxed</span>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <div class="control-label">
+                                    <label for="textWidth">Text width</label>
+                                    <output id="textWidthValue">560px</output>
+                                </div>
+                                <input
+                                    id="textWidth"
+                                    type="range"
+                                    min="260"
+                                    max="700"
+                                    value="560"
+                                    step="20"
+                                />
+                                <div class="range-labels">
+                                    <span>Narrow</span><span>Wide</span>
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <label for="fontFamily">Font family</label>
+                                <select id="fontFamily">
+                                    <option value="sans">Sans-serif</option>
+                                    <option value="serif">Serif</option>
+                                    <option value="mono">Monospace</option>
+                                </select>
+                            </div>
+
+                            <div class="control-group">
+                                <label for="fontWeight">Font weight</label>
+                                <select id="fontWeight">
+                                    <option value="400">Regular — 400</option>
+                                    <option value="500">Medium — 500</option>
+                                    <option value="600">Semibold — 600</option>
+                                    <option value="700">Bold — 700</option>
+                                </select>
+                            </div>
+
+                            <div class="control-actions">
+                                <button
+                                    class="reset-btn"
+                                    id="resetBtn"
+                                    type="button"
+                                >
+                                    ↻ Reset settings
+                                </button>
+                            </div>
+
+                            <p class="control-note">
+                                TRY THIS: Start with a line height of 1.0, then
+                                move it up to 1.6.
+                            </p>
+                        </aside>
+
+                        <div class="preview-panel">
+                            <div class="preview-toolbar">
+                                <span
+                                    ><span class="preview-dot"></span> LIVE
+                                    PREVIEW</span
+                                >
+                                <span id="previewStatus">DEFAULT STYLES</span>
+                            </div>
+
+                            <div class="preview-canvas">
+                                <div class="preview-meta">
+                                    <span>FIELD NOTES / 002</span>
+                                    <span>READING EXPERIENCE</span>
+                                </div>
+
+                                <h3 id="previewTitle">
+                                    The art of slowing down.
+                                </h3>
+
+                                <div class="sample-copy" id="sampleCopy">
+                                    <p>
+                                        Good design is not always about adding
+                                        more. Sometimes, it is about giving
+                                        every element enough room to breathe.
+                                    </p>
+                                    <p>
+                                        A comfortable reading experience comes
+                                        from the details: the size of the
+                                        letters, the distance between lines, and
+                                        the width of the column they occupy.
+                                    </p>
+                                    <p>
+                                        Adjust these settings and notice how the
+                                        exact same words can feel crowded, calm,
+                                        elegant, or difficult to follow.
+                                    </p>
+                                </div>
+
+                                <div class="preview-footer">
+                                    <span>END OF EXAMPLE</span>
+                                    <span>¶ &nbsp; 3 PARAGRAPHS</span>
+                                </div>
+                            </div>
+
+                            <div class="live-values">
+                                <div>
+                                    <span>FONT SIZE</span>
+                                    <strong id="statFont">18px</strong>
+                                </div>
+                                <div>
+                                    <span>LINE HEIGHT</span>
+                                    <strong id="statLine">1.6</strong>
+                                </div>
+                                <div>
+                                    <span>MAX WIDTH</span>
+                                    <strong id="statWidth">560px</strong>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="lesson-section page-width" id="principles">
+                <div class="section-heading">
+                    <span class="section-index">03 — THE PRINCIPLES</span>
+                    <h2>Three things to remember.</h2>
+                </div>
+
+                <div class="principles-grid">
+                    <article class="principle">
+                        <span class="principle-symbol">Aa</span>
+                        <span class="principle-number">01 / SIZE</span>
+                        <h3>Make it readable.</h3>
+                        <p>
+                            Font size determines how large the characters
+                            appear. Body text often starts around 16–18px, but
+                            the right choice depends on the font and reading
+                            context.
+                        </p>
+                        <code>font-size: 18px;</code>
+                    </article>
+
+                    <article class="principle">
+                        <span class="principle-symbol">↕</span>
+                        <span class="principle-number">02 / RHYTHM</span>
+                        <h3>Give lines room.</h3>
+                        <p>
+                            Line height controls the height of each line box. A
+                            unitless value around 1.5–1.7 is a useful starting
+                            point for many paragraphs.
+                        </p>
+                        <code>line-height: 1.6;</code>
+                    </article>
+
+                    <article class="principle">
+                        <span class="principle-symbol">↔</span>
+                        <span class="principle-number">03 / WIDTH</span>
+                        <h3>Control the measure.</h3>
+                        <p>
+                            Long lines can make it harder to track the next
+                            line. Limit paragraph width and adjust it for
+                            different screens and fonts.
+                        </p>
+                        <code>max-width: 65ch;</code>
+                    </article>
+                </div>
+            </section>
+
+            <section class="challenge-section page-width">
+                <div class="challenge-card">
+                    <div>
+                        <span class="section-index">04 — YOUR TURN</span>
+                        <h2>Can you improve<br />the reading experience?</h2>
+                        <p>
+                            Try to create a comfortable paragraph using the
+                            controls above. Then check your understanding.
+                        </p>
+                    </div>
+
+                    <a class="challenge-link" href="#quick-check">
+                        Take the quick check <span>↗</span>
+                    </a>
+                </div>
+            </section>
+
+            <section class="lesson-section page-width" id="quick-check">
+                <div class="section-heading">
+                    <span class="section-index">05 — QUICK CHECK</span>
+                    <h2>Did it click?</h2>
+                    <p>Three questions. Instant feedback. No pressure.</p>
+                </div>
+
+                <div class="check-card" id="checkCard">
+                    <div class="check-progress">
+                        <span id="checkCount">QUESTION 01 / 03</span>
+                        <span id="checkScore">SCORE 0</span>
+                    </div>
+
+                    <div class="mini-progress">
+                        <div id="miniProgressFill"></div>
+                    </div>
+
+                    <h3 id="checkQuestion"></h3>
+                    <pre class="check-code" id="checkCode"></pre>
+                    <div class="check-options" id="checkOptions"></div>
+
+                    <div
+                        class="check-feedback"
+                        id="checkFeedback"
+                        aria-live="polite"
+                        hidden
+                    ></div>
+
+                    <div class="check-actions">
+                        <span id="checkHint">SELECT ONE ANSWER</span>
+                        <button
+                            class="action-btn"
+                            id="checkAnswerBtn"
+                            type="button"
+                        >
+                            Check answer ↗
+                        </button>
+                        <button
+                            class="action-btn"
+                            id="checkNextBtn"
+                            type="button"
+                            hidden
+                        >
+                            Continue →
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <section class="completion page-width" id="completion" hidden>
+                <span class="completion-symbol">✳</span>
+                <span class="section-index">LESSON 002 COMPLETE</span>
+                <h2 id="completionTitle">KEEP BUILDING.</h2>
+                <p id="completionText"></p>
+                <button class="action-btn" id="retryBtn" type="button">
+                    ↻ Try again
+                </button>
+            </section>
+        </main>
+
+        <footer class="footer page-width">
+            <a class="brand" href="#">
+                <span class="brand-icon">&lt;/&gt;</span>
+                <span>CODE<span class="brand-muted">LAB</span></span>
+            </a>
+            <span>SCHOOL / LESSON 002</span>
+            <a href="#learn">BACK TO TOP ↑</a>
+        </footer>
+
+        <script type="module" src="./assets/js/main.js"></script>
+    </body>
 </html>
