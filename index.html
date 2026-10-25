@@ -11,6 +11,7 @@
         <title>002 — Paragraph Typography | CodeLab School</title>
         <link rel="stylesheet" href="./assets/css/style.css" />
     </head>
+
     <body>
         <header class="topbar">
             <a class="brand" href="#" aria-label="CodeLab School home">
@@ -63,39 +64,55 @@
                     <article class="lesson-card">
                         <span class="card-number">01.1</span>
                         <h3>The HTML element</h3>
+
                         <p>
                             The <code>&lt;p&gt;</code> element represents a
                             paragraph. Use it to group related sentences into a
                             meaningful block.
                         </p>
-                        <pre class="code-sample"><code>&lt;p&gt;
-  Learning to code takes practice.
-&lt;/p&gt;</code></pre>
+
+                        <pre class="code-sample">
+                            <code>
+                                &lt;p&gt;
+                                Learning to code takes practice.
+                                &lt;/p&gt;
+                            </code>
+                        </pre>
                     </article>
 
                     <article class="lesson-card">
                         <span class="card-number">01.2</span>
                         <h3>Separate your thoughts</h3>
+
                         <p>
                             Use separate paragraph elements for separate ideas.
                             Browsers normally display them as distinct blocks.
                         </p>
-                        <pre
-                            class="code-sample"
-                        ><code>&lt;p&gt;First thought.&lt;/p&gt;
-&lt;p&gt;Another thought.&lt;/p&gt;</code></pre>
+
+                        <pre class="code-sample">
+                            <code>
+                                &lt;p&gt;First thought.&lt;/p&gt;
+                                &lt;p&gt;Another thought.&lt;/p&gt;
+                            </code>
+                        </pre>
                     </article>
 
                     <article class="lesson-card">
                         <span class="card-number">01.3</span>
                         <h3>Spacing is not content</h3>
+
                         <p>
                             Don't add empty paragraphs just to create gaps. Use
                             CSS margins to control the space between blocks.
                         </p>
-                        <pre class="code-sample"><code>p {
-  margin-bottom: 1.5rem;
-}</code></pre>
+
+                        <pre class="code-sample">
+                            <code>
+                                p {
+                                    margin-bottom: 1.5rem;
+                                }
+                            </code>
+                        </pre>
                     </article>
                 </div>
             </section>
@@ -105,6 +122,7 @@
                     <div class="section-heading">
                         <span class="section-index">02 — INTERACTIVE LAB</span>
                         <h2>Typography, in your hands.</h2>
+
                         <p>
                             Change the settings. Watch the same paragraph
                             transform.
@@ -123,6 +141,7 @@
                                     <label for="fontSize">Font size</label>
                                     <output id="fontSizeValue">18px</output>
                                 </div>
+
                                 <input
                                     id="fontSize"
                                     type="range"
@@ -131,6 +150,7 @@
                                     value="18"
                                     step="1"
                                 />
+
                                 <div class="range-labels">
                                     <span>12px</span><span>30px</span>
                                 </div>
@@ -141,6 +161,7 @@
                                     <label for="lineHeight">Line height</label>
                                     <output id="lineHeightValue">1.6</output>
                                 </div>
+
                                 <input
                                     id="lineHeight"
                                     type="range"
@@ -149,6 +170,7 @@
                                     value="1.6"
                                     step="0.1"
                                 />
+
                                 <div class="range-labels">
                                     <span>Tight</span><span>Relaxed</span>
                                 </div>
@@ -159,6 +181,7 @@
                                     <label for="textWidth">Text width</label>
                                     <output id="textWidthValue">560px</output>
                                 </div>
+
                                 <input
                                     id="textWidth"
                                     type="range"
@@ -167,6 +190,7 @@
                                     value="560"
                                     step="20"
                                 />
+
                                 <div class="range-labels">
                                     <span>Narrow</span><span>Wide</span>
                                 </div>
@@ -174,6 +198,7 @@
 
                             <div class="control-group">
                                 <label for="fontFamily">Font family</label>
+
                                 <select id="fontFamily">
                                     <option value="sans">Sans-serif</option>
                                     <option value="serif">Serif</option>
@@ -183,6 +208,7 @@
 
                             <div class="control-group">
                                 <label for="fontWeight">Font weight</label>
+
                                 <select id="fontWeight">
                                     <option value="400">Regular — 400</option>
                                     <option value="500">Medium — 500</option>
@@ -209,10 +235,11 @@
 
                         <div class="preview-panel">
                             <div class="preview-toolbar">
-                                <span
-                                    ><span class="preview-dot"></span> LIVE
-                                    PREVIEW</span
-                                >
+                                <span>
+                                    <span class="preview-dot"></span>
+                                    LIVE PREVIEW
+                                </span>
+
                                 <span id="previewStatus">DEFAULT STYLES</span>
                             </div>
 
@@ -280,6 +307,7 @@
                     <article class="principle">
                         <span class="principle-symbol">Aa</span>
                         <span class="principle-number">01 / SIZE</span>
+
                         <h3>Make it readable.</h3>
                         <p>
                             Font size determines how large the characters
@@ -287,25 +315,31 @@
                             the right choice depends on the font and reading
                             context.
                         </p>
+
                         <code>font-size: 18px;</code>
                     </article>
 
                     <article class="principle">
                         <span class="principle-symbol">↕</span>
                         <span class="principle-number">02 / RHYTHM</span>
+
                         <h3>Give lines room.</h3>
+
                         <p>
                             Line height controls the height of each line box. A
                             unitless value around 1.5–1.7 is a useful starting
                             point for many paragraphs.
                         </p>
+
                         <code>line-height: 1.6;</code>
                     </article>
 
                     <article class="principle">
                         <span class="principle-symbol">↔</span>
                         <span class="principle-number">03 / WIDTH</span>
+
                         <h3>Control the measure.</h3>
+
                         <p>
                             Long lines can make it harder to track the next
                             line. Limit paragraph width and adjust it for
@@ -320,7 +354,12 @@
                 <div class="challenge-card">
                     <div>
                         <span class="section-index">04 — YOUR TURN</span>
-                        <h2>Can you improve<br />the reading experience?</h2>
+
+                        <h2>
+                            Can you improve<br />
+                            the reading experience?
+                        </h2>
+
                         <p>
                             Try to create a comfortable paragraph using the
                             controls above. Then check your understanding.
@@ -336,7 +375,9 @@
             <section class="lesson-section page-width" id="quick-check">
                 <div class="section-heading">
                     <span class="section-index">05 — QUICK CHECK</span>
+
                     <h2>Did it click?</h2>
+
                     <p>Three questions. Instant feedback. No pressure.</p>
                 </div>
 
@@ -363,6 +404,7 @@
 
                     <div class="check-actions">
                         <span id="checkHint">SELECT ONE ANSWER</span>
+
                         <button
                             class="action-btn"
                             id="checkAnswerBtn"
@@ -370,6 +412,7 @@
                         >
                             Check answer ↗
                         </button>
+
                         <button
                             class="action-btn"
                             id="checkNextBtn"
@@ -385,8 +428,10 @@
             <section class="completion page-width" id="completion" hidden>
                 <span class="completion-symbol">✳</span>
                 <span class="section-index">LESSON 002 COMPLETE</span>
+
                 <h2 id="completionTitle">KEEP BUILDING.</h2>
                 <p id="completionText"></p>
+
                 <button class="action-btn" id="retryBtn" type="button">
                     ↻ Try again
                 </button>
@@ -398,6 +443,7 @@
                 <span class="brand-icon">&lt;/&gt;</span>
                 <span>CODE<span class="brand-muted">LAB</span></span>
             </a>
+
             <span>SCHOOL / LESSON 002</span>
             <a href="#learn">BACK TO TOP ↑</a>
         </footer>
