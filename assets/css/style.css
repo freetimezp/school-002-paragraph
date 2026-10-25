@@ -324,6 +324,14 @@ select:focus-visible {
     line-height: 1.9;
 }
 
+.lesson-card p {
+    min-height: 74px;
+}
+
+.principle p {
+    min-height: 99px;
+}
+
 .lesson-card p code,
 .principle > code {
     color: var(--accent);
@@ -333,7 +341,7 @@ select:focus-visible {
 .code-sample,
 .check-code {
     margin-top: 22px;
-    padding: 15px;
+    padding: 25px 15px;
     overflow-x: auto;
 
     border: 1px solid #30312b;
